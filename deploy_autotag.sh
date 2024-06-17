@@ -277,7 +277,7 @@ EOF
     S3_PATH="releases/$ZIP_FILE"
 
     # TODO: this doesn't work before v0.5.1 because the JSON template wasn't in the repo
-    MAIN_TEMPLATE=$(curl -sS ${GITHUB_URL}/${RELEASE_COMMIT}/cloud_formation/event_multi_region_template/autotag_event_main-template.json)
+    MAIN_TEMPLATE=$(curl -sS ${GITHUB_URL}/${RELEASE_COMMIT}/cloud_formation/event_single_region_template/autotag_event-template.json)
 
     echo "Creating the Main CloudFormation Stack..."
 
