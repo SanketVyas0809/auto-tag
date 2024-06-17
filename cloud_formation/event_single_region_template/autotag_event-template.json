@@ -124,7 +124,7 @@
                 "logs:CreateLogStream",
                 "logs:PutLogEvents"
               ],
-              "Resource": "arn:aws:logs:*:*:*"
+              "Resource": "arn:aws:logs:*:/aws/lambda/Resource-Auto-tagger:*"
             },
             {
               "Effect": "Allow",
